@@ -1,9 +1,9 @@
 export default function(){
 	return	[
-		{title: 'Hello World'},
-		{title: 'Goodbye World'},
-		{title: 'The Godfather'},
-		{title: 'Javascript'},
-		{title: 'Ruby on Rails'}
+		{title: 'Hello World', pages: 101},
+		{title: 'Goodbye World', pages: 200},
+		{title: 'The Godfather', pages: 75},
+		{title: 'Javascript', pages: 88},
+		{title: 'Ruby on Rails', pages: 101}
 	];
 }
