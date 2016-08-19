@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { selectBook } from '../actions/index.jsx';
+import { bindActionCreators } from 'redux';
+
 
 
 // container
@@ -30,4 +33,9 @@ function mapStateToProps(state){
 	};
 }
 
-export default connect(mapStateToProps)(BookList);
+function mapDispatchToProps(dispatch){
+	return bindActionCreators({delectBook: selectBook}, dispatch)
+}
+
+// connect taked a function and a component and creates a container above
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
